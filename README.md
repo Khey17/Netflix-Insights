@@ -37,8 +37,50 @@ This project dives deep into Netflix's content catalog using PostgreSQL to uncov
 -- content as 'Good'. Count how many items fall into each category.
 
 ```
-### Tools:
-* PostgreSQL for query execution.
-* Netflix dataset for comprehensive content analysis.
+# Netflix Data Analysis
+
+## About
+
+This project analyzes Netflix data to explore trends in movies and TV shows. It includes insights into content distribution, ratings, popular genres, and various key metrics using SQL queries.
+
+## Dataset
+
+The dataset contains information on Netflix shows, including title, director, actors, country, release year, rating, duration, genres, and descriptions.
+
+### Table Structure
+
+| Column        | Description                | Data Type     |
+| ------------- | -------------------------- | ------------- |
+| show\_id      | Unique ID for the show     | VARCHAR(6)    |
+| type          | Movie or TV Show           | VARCHAR(10)   |
+| title         | Name of the show           | VARCHAR(150)  |
+| director      | Director of the show       | VARCHAR(250)  |
+| actors        | Main actors in the show    | VARCHAR(1000) |
+| country       | Country of production      | VARCHAR(150)  |
+| date\_added   | Date when added to Netflix | VARCHAR(75)   |
+| release\_year | Year of release            | INT           |
+| rating        | Age rating                 | VARCHAR(10)   |
+| duration      | Duration (minutes/seasons) | VARCHAR(20)   |
+| listed\_in    | Genres                     | VARCHAR(100)  |
+| description   | Brief summary of the show  | VARCHAR(300)  |
+
+
+## Approach Used
+
+1. **Database Setup** - Created a table and inserted data.
+2. **Data Cleaning** - Handling NULL values and formatting fields.
+3. **Feature Extraction** - Splitting multi-value columns for better analysis.
+4. **Exploratory Data Analysis (EDA)** - Running SQL queries to generate insights.
+
+## Tools Used
+
+- PostgreSQL
+- SQL Queries for data analysis
+
+## Conclusion
+
+This project provides insights into Netflix's content library, trends, and key information using SQL-based analysis.
+
+---
 
 You can explore and use the SQL queries for your projects. Contributions are welcome! 🚀
